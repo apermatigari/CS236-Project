@@ -1,5 +1,7 @@
 """Export the Parquet outputs to single CSV files in output/csv/.
 
+Run after run_all.sh (needs the raw CSVs in CS236-Project/datasets/ - see ../datasets/README.md).
+
 Usage:
   python export_csv.py                 # full export of nyc_clean, la_clean, unified
   python export_csv.py --sample 1000   # only the first N rows of each

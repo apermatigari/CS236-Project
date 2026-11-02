@@ -2,3 +2,6 @@ __pycache__/
 output/
 .venv/
 .jdk/
+# raw data is downloaded separately (see datasets/README.md)
+datasets/*
+!datasets/README.md

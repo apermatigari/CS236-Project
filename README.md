@@ -19,6 +19,7 @@ Dockerized PostgreSQL database, and Phase 3 adds a WebUI to search, filter and i
 ```
 CS236-Project/
 ├── README.md               ← this file
+├── datasets/               ← put the raw CSVs here (not in git; see Data below)
 ├── EDA/                    ← Phase 1.2: exploratory data analysis
 └── Dataset-Processing/     ← Phase 1.3: cleaning, schema mapping, merge, validation
     ├── README.md           ← how to run
@@ -29,8 +30,21 @@ CS236-Project/
 
 ## Data
 
-The raw CSVs are **not** in the repo because of their size (about 1 GB total). Put them in a
-`datasets/` folder next to this repo or inside it, or set `CS236_DATA_DIR`:
+The raw CSVs are **not** in the repo because of their size (about 1 GB total). Before
+running anything:
+
+1. Download the course dataset from UCR eLearn (UCR login required):
+   https://elearn.ucr.edu/courses/238702/files/26557259/download?download_frd=1
+2. Extract it if it's a zip, and put both CSVs in **`CS236-Project/datasets/`**:
+
+```
+CS236-Project/datasets/nyc_311_800k.csv
+CS236-Project/datasets/la_311_800k.csv
+```
+
+Git ignores everything in `datasets/` except its README. To keep the files somewhere else,
+set `CS236_DATA_DIR=/path/to/folder`. See [`datasets/README.md`](datasets/README.md) for details.
+If the files are missing, the scripts stop with a message pointing here.
 
 | File | Source | Rows |
 |---|---|---|
@@ -66,6 +80,7 @@ adds derived attributes (unique `request_id`, `resolution_hours`, date parts), a
 24 validation checks pass.
 
 ```bash
+# first put the raw CSVs in CS236-Project/datasets/ (see Data above)
 cd Dataset-Processing
 ./setup_env.sh && ./run_all.sh
 ```

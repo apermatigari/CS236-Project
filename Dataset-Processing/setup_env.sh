@@ -17,4 +17,9 @@ fi
 
 python3 -m venv .venv
 .venv/bin/pip install -q -r requirements.txt
+if [ ! -f ../datasets/nyc_311_800k.csv ] || [ ! -f ../datasets/la_311_800k.csv ]; then
+  echo "NOTE: raw CSVs not found in CS236-Project/datasets/."
+  echo "      Download them from UCR eLearn (see ../datasets/README.md):"
+  echo "      https://elearn.ucr.edu/courses/238702/files/26557259/download?download_frd=1"
+fi
 echo "Environment ready. Run ./run_all.sh"

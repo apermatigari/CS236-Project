@@ -3,11 +3,15 @@
 #   clean_nyc.py -> clean_la.py -> merge.py -> validate.py
 # Output from each step is also saved to output/run_log.txt.
 #
+# Before running: put nyc_311_800k.csv and la_311_800k.csv in CS236-Project/datasets/
+# (download from UCR eLearn; see ../datasets/README.md).
+#
 # Usage: ./run_all.sh
 # Optional environment variables:
 #   PYTHON          Python interpreter with pyspark installed (default: nearest .venv, else python3)
 #   JAVA_HOME       Java 17 install (default: nearest .jdk/jdk-17*, else the system Java)
-#   CS236_DATA_DIR  folder with the raw CSVs (default: nearest 'datasets' folder above this one)
+#   CS236_DATA_DIR  folder with the raw CSVs (default: CS236-Project/datasets/, or the nearest
+#                   populated 'datasets' folder above it)
 set -euo pipefail
 cd "$(dirname "$0")"
 

@@ -8,8 +8,11 @@ and merges them into one unified dataset. Decisions and results are explained in
 
 - Python 3.9+ with `pyspark==3.5.1` (`requirements.txt`)
 - Java 17 (Spark needs a JVM)
-- The raw CSVs `nyc_311_800k.csv` and `la_311_800k.csv` in a folder named `datasets`
-  in this folder or any folder above it. Alternatively, point `CS236_DATA_DIR` to the folder.
+- The raw CSVs `nyc_311_800k.csv` and `la_311_800k.csv` in **`CS236-Project/datasets/`**.
+  They are not in git. Download them from UCR eLearn (login required):
+  https://elearn.ucr.edu/courses/238702/files/26557259/download?download_frd=1
+  See [`../datasets/README.md`](../datasets/README.md). To use another folder, set
+  `CS236_DATA_DIR`. The scripts also find a populated `datasets/` folder above the repo.
 
 `./setup_env.sh` creates `.venv/` with PySpark and, if no Java is installed, downloads a local
 OpenJDK 17 into `.jdk/`. No sudo is needed, and it works on Linux and macOS.
@@ -17,6 +20,7 @@ OpenJDK 17 into `.jdk/`. No sudo is needed, and it works on Linux and macOS.
 ## Run
 
 ```bash
+# 0. put the raw CSVs in CS236-Project/datasets/ (see above)
 ./setup_env.sh                       # one time
 ./run_all.sh                         # clean_nyc -> clean_la -> merge -> validate
 .venv/bin/python export_csv.py       # optional: CSV copies (--sample N, --only unified)

@@ -20,6 +20,10 @@ come from `./run_all.sh` (full log in `output/run_log.txt`).
 | Identifier | `unique_key` | `srnumber` |
 | Created-date range | 2026-07-22 → 2026-10-05 | 2024-01-01 → 2024-07-24 |
 
+The raw files aren't in the git repo. They come from UCR eLearn
+(https://elearn.ucr.edu/courses/238702/files/26557259/download?download_frd=1) and go in
+`CS236-Project/datasets/` (see `datasets/README.md`).
+
 Both files are read with every column as text (`inferSchema=False`). Types are then set
 explicitly during cleaning. This prevents wrong guesses, such as ZIP codes read as integers.
 
@@ -206,6 +210,9 @@ Summary of the unified dataset:
   city limits.
 
 ## 11. Reproducing
+
+1. Download the raw CSVs from UCR eLearn (link in §1) into `CS236-Project/datasets/`.
+2. Run:
 
 ```bash
 cd Dataset-Processing

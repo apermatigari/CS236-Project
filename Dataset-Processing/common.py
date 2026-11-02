@@ -6,9 +6,10 @@ cleaning rules shared by both cities are defined in exactly one place.
 
 Path resolution
 ---------------
-* Raw CSVs: taken from the CS236_DATA_DIR environment variable if set; otherwise the
-  first folder named ``datasets`` found while walking up from this file. This lets the
-  repo live anywhere (inside or next to the course folder) without editing code.
+* Raw CSVs: not in git. Download them from UCR eLearn (DATA_URL below, login required)
+  into ``CS236-Project/datasets/`` (see datasets/README.md). They are looked up in the
+  CS236_DATA_DIR environment variable if set; otherwise in the closest folder named
+  ``datasets`` that contains the CSVs, walking up from this file.
 * Outputs: written to ``Dataset-Processing/output/`` (git-ignored).
 """
 import os
@@ -19,21 +20,32 @@ from pyspark.sql import SparkSession, functions as F
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
+DATA_URL = "https://elearn.ucr.edu/courses/238702/files/26557259/download?download_frd=1"
+RAW_FILES = ("nyc_311_800k.csv", "la_311_800k.csv")
+
+
 def _find_data_dir():
-    """Return the folder holding the raw CSVs (see module docstring)."""
+    """Return the folder holding the raw CSVs (see module docstring).
+
+    A ``datasets`` folder only counts if it actually contains the CSVs, so the
+    repo's own ``datasets/`` (which holds just a README until the data is added)
+    doesn't hide a populated folder higher up.
+    """
     env = os.environ.get("CS236_DATA_DIR")
     if env:
         return env
     d = HERE
     while True:
         candidate = os.path.join(d, "datasets")
-        if os.path.isdir(candidate):
+        if all(os.path.isfile(os.path.join(candidate, f)) for f in RAW_FILES):
             return candidate
         parent = os.path.dirname(d)
         if parent == d:
             raise FileNotFoundError(
-                "Could not find a 'datasets' folder. Set CS236_DATA_DIR to the folder "
-                "containing nyc_311_800k.csv and la_311_800k.csv.")
+                "Raw data not found. Download the course dataset from UCR eLearn:\n"
+                f"  {DATA_URL}\n"
+                "and put nyc_311_800k.csv and la_311_800k.csv in CS236-Project/datasets/ "
+                "(see datasets/README.md), or set CS236_DATA_DIR to their folder.")
         d = parent
 
 
