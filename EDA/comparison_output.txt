@@ -1,0 +1,1014 @@
+26/11/02 18:35:52 WARN Utils: Your hostname, Andrews-MacBook-Pro.local resolves to a loopback address: 127.0.0.1; using 192.168.1.130 instead (on interface en0)
+26/11/02 18:35:52 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/02 18:35:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                        (0 + 10) / 10]                                                                                [Stage 3:=====>                                                    (1 + 9) / 10]                                                                                [Stage 10:>                                                       (0 + 10) / 10][Stage 10:=====>                                                   (1 + 9) / 10]                                                                                [Stage 19:=====>                                                   (1 + 9) / 10]                                                                                [Stage 22:=====>                                                   (1 + 9) / 10]                                                                                [Stage 28:======================>                                  (4 + 6) / 10]                                                                                [Stage 31:>                                                       (0 + 10) / 10]                                                                                [Stage 34:>                                                       (0 + 10) / 10][Stage 34:=====>                                                   (1 + 9) / 10]                                                                                [Stage 37:=====>                                                   (1 + 9) / 10]                                                                                [Stage 40:=====>                                                   (1 + 9) / 10]                                                                                [Stage 43:===========>                                             (2 + 8) / 10]                                                                                [Stage 46:>                                                       (0 + 10) / 10]                                                                                [Stage 55:=====>                                                   (1 + 9) / 10]                                                                                [Stage 64:=====>                                                   (1 + 9) / 10]                                                                                [Stage 91:=====>                                                   (1 + 9) / 10]                                                                                [Stage 103:===========>                                            (2 + 8) / 10]                                                                                [Stage 106:>                                                      (0 + 10) / 10]                                                                                [Stage 151:===========>                                            (2 + 8) / 10]                                                                                [Stage 179:>                                                      (0 + 10) / 10]                                                                                [Stage 192:>                                                      (0 + 10) / 10]                                                                                [Stage 205:>                                                      (0 + 10) / 10]                                                                                [Stage 218:>                                                      (0 + 10) / 10][Stage 218:>              (0 + 10) / 10][Stage 220:>                (0 + 0) / 1]                                                                                [Stage 231:>                                                      (0 + 10) / 10]                                                                                [Stage 244:>                                                      (0 + 10) / 10]                                                                                [Stage 257:>                                                      (0 + 10) / 10]                                                                                [Stage 270:>                                                      (0 + 10) / 10]                                                                                [Stage 283:>                                                      (0 + 10) / 10][Stage 283:=====>                                                  (1 + 9) / 10]                                                                                [Stage 296:>                                                      (0 + 10) / 10]                                                                                [Stage 308:===>            (2 + 8) / 10][Stage 309:>               (0 + 2) / 10][Stage 309:>                                                      (0 + 10) / 10]                                                                                [Stage 321:=>              (1 + 9) / 10][Stage 322:>               (0 + 1) / 10][Stage 322:>                                                      (0 + 10) / 10]                                                                                26/11/02 18:36:42 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 330:>                                                      (0 + 10) / 10]26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:44 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:46 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:48 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:50 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:51 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:53 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:54 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 330:=====>                                                  (1 + 9) / 10][Stage 330:===========>                                            (2 + 8) / 10][Stage 330:================>                                       (3 + 7) / 10][Stage 330:=================================>                      (6 + 4) / 10]26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 332:>                                                      (0 + 10) / 11]26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:58 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:36:59 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 332:==========>                                             (2 + 9) / 11]                                                                                [Stage 336:>                                                      (0 + 10) / 10]26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:02 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:03 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:04 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:05 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:06 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:06 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:07 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:08 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:08 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:08 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:08 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 336:=====>                                                  (1 + 9) / 10][Stage 336:===========>                                            (2 + 8) / 10][Stage 336:============================>                           (5 + 5) / 10]26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 338:>                                                      (0 + 10) / 11]26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:10 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:11 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 338:=========================>                              (5 + 6) / 11]                                                                                cs236.project
+root
+ |-- unique_key: integer (nullable = true)
+ |-- created_date: timestamp (nullable = true)
+ |-- closed_date: timestamp (nullable = true)
+ |-- agency: string (nullable = true)
+ |-- agency_name: string (nullable = true)
+ |-- complaint_type: string (nullable = true)
+ |-- descriptor: string (nullable = true)
+ |-- descriptor_2: string (nullable = true)
+ |-- location_type: string (nullable = true)
+ |-- incident_zip: string (nullable = true)
+ |-- incident_address: string (nullable = true)
+ |-- street_name: string (nullable = true)
+ |-- cross_street_1: string (nullable = true)
+ |-- cross_street_2: string (nullable = true)
+ |-- intersection_street_1: string (nullable = true)
+ |-- intersection_street_2: string (nullable = true)
+ |-- address_type: string (nullable = true)
+ |-- city: string (nullable = true)
+ |-- landmark: string (nullable = true)
+ |-- facility_type: string (nullable = true)
+ |-- status: string (nullable = true)
+ |-- due_date: timestamp (nullable = true)
+ |-- resolution_description: string (nullable = true)
+ |-- resolution_action_updated_date: timestamp (nullable = true)
+ |-- community_board: string (nullable = true)
+ |-- council_district: integer (nullable = true)
+ |-- police_precinct: string (nullable = true)
+ |-- bbl: long (nullable = true)
+ |-- borough: string (nullable = true)
+ |-- x_coordinate_state_plane: integer (nullable = true)
+ |-- y_coordinate_state_plane: integer (nullable = true)
+ |-- open_data_channel_type: string (nullable = true)
+ |-- park_facility_name: string (nullable = true)
+ |-- park_borough: string (nullable = true)
+ |-- vehicle_type: string (nullable = true)
+ |-- taxi_company_borough: string (nullable = true)
+ |-- taxi_pick_up_location: string (nullable = true)
+ |-- bridge_highway_name: string (nullable = true)
+ |-- bridge_highway_direction: string (nullable = true)
+ |-- road_ramp: string (nullable = true)
+ |-- bridge_highway_segment: string (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- location: string (nullable = true)
+
+root
+ |-- srnumber: string (nullable = true)
+ |-- createddate: timestamp (nullable = true)
+ |-- updateddate: timestamp (nullable = true)
+ |-- actiontaken: string (nullable = true)
+ |-- owner: string (nullable = true)
+ |-- requesttype: string (nullable = true)
+ |-- status: string (nullable = true)
+ |-- requestsource: string (nullable = true)
+ |-- createdbyuserorganization: string (nullable = true)
+ |-- mobileos: string (nullable = true)
+ |-- anonymous: string (nullable = true)
+ |-- assignto: string (nullable = true)
+ |-- servicedate: timestamp (nullable = true)
+ |-- closeddate: timestamp (nullable = true)
+ |-- addressverified: string (nullable = true)
+ |-- approximateaddress: string (nullable = true)
+ |-- address: string (nullable = true)
+ |-- housenumber: integer (nullable = true)
+ |-- direction: string (nullable = true)
+ |-- streetname: string (nullable = true)
+ |-- suffix: string (nullable = true)
+ |-- zipcode: string (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- location: string (nullable = true)
+ |-- tbmpage: integer (nullable = true)
+ |-- tbmcolumn: string (nullable = true)
+ |-- tbmrow: integer (nullable = true)
+ |-- apc: string (nullable = true)
+ |-- cd: integer (nullable = true)
+ |-- cdmember: string (nullable = true)
+ |-- nc: integer (nullable = true)
+ |-- ncname: string (nullable = true)
+ |-- policeprecinct: string (nullable = true)
+
+NYC created_date (timestamp)  -  LA createddate (timestamp) : different name
+NYC closed_date (timestamp)  -  LA closeddate (timestamp) : different name
+NYC street_name (string)  -  LA streetname (string) : different name
+NYC status (string)  -  LA status (string)
+NYC police_precinct (string)  -  LA policeprecinct (string) : different name
+NYC latitude (double)  -  LA latitude (double)
+NYC longitude (double)  -  LA longitude (double)
+NYC location (string)  -  LA location (string)
+Only in NYC 36: ['unique_key', 'agency', 'agency_name', 'complaint_type', 'descriptor', 'descriptor_2', 'location_type', 'incident_zip', 'incident_address', 'cross_street_1', 'cross_street_2', 'intersection_street_1', 'intersection_street_2', 'address_type', 'city', 'landmark', 'facility_type', 'due_date', 'resolution_description', 'resolution_action_updated_date', 'community_board', 'council_district', 'bbl', 'borough', 'x_coordinate_state_plane', 'y_coordinate_state_plane', 'open_data_channel_type', 'park_facility_name', 'park_borough', 'vehicle_type', 'taxi_company_borough', 'taxi_pick_up_location', 'bridge_highway_name', 'bridge_highway_direction', 'road_ramp', 'bridge_highway_segment']
+Only in LA  26: ['srnumber', 'updateddate', 'actiontaken', 'owner', 'requesttype', 'requestsource', 'createdbyuserorganization', 'mobileos', 'anonymous', 'assignto', 'servicedate', 'addressverified', 'approximateaddress', 'address', 'housenumber', 'direction', 'suffix', 'zipcode', 'tbmpage', 'tbmcolumn', 'tbmrow', 'apc', 'cd', 'cdmember', 'nc', 'ncname']
+
+NYC:  street_name vs LA:  streetname
+  600 or more different values
+
+NYC:  status vs LA:  status
+ only in NYC: 4
++-----------+
+|     status|
++-----------+
+|In Progress|
+|Unspecified|
+|    Started|
+|   Assigned|
++-----------+
+
+ only in LA: 3
++------------+
+|      status|
++------------+
+|   Cancelled|
+|Referred Out|
+|     Forward|
++------------+
+
+ in both: 3
++-------+
+| status|
++-------+
+|   Open|
+|Pending|
+| Closed|
++-------+
+
+
+NYC:  police_precinct vs LA:  policeprecinct
+ only in NYC: 78
++---------------+
+|police_precinct|
++---------------+
+|    Precinct 83|
+|    Precinct 23|
+|   Precinct 108|
+|    Precinct 78|
+|     Precinct 5|
+|    Precinct 62|
+|    Precinct 50|
+|   Precinct 120|
+|   Precinct 105|
+|    Precinct 33|
+|    Precinct 40|
+|    Precinct 14|
+|   Precinct 113|
+|   Precinct 101|
+|    Precinct 45|
++---------------+
+only showing top 15 rows
+
+ only in LA: 22
++----------------+
+|  policeprecinct|
++----------------+
+|      DEVONSHIRE|
+|         MISSION|
+|       SOUTHWEST|
+|        FOOTHILL|
+|         CENTRAL|
+|        WILSHIRE|
+|       SOUTHEAST|
+|          HARBOR|
+|WEST LOS ANGELES|
+|     77TH STREET|
+|          NEWTON|
+|         RAMPART|
+|       HOLLYWOOD|
+|         TOPANGA|
+|       NORTHEAST|
++----------------+
+only showing top 15 rows
+
+ in both: 0
++---------------+
+|police_precinct|
++---------------+
++---------------+
+
+
+NYC:  location vs LA:  location
+  600 or more different values
+NYC: , bridge_highway_name LA: , tbmcolumn 8 shared values:  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'J']
+NYC: , bridge_highway_name LA: , direction 3 shared values:  ['E', 'N', 'W']
+NYC: , bridge_highway_name LA: , addressverified 2 shared values:  ['M', 'N']
+NYC: , vehicle_type LA: , requesttype 1 shared values:  ['Other']
+NYC: , location_type LA: , requesttype 1 shared values:  ['Other']
+NYC: , bridge_highway_name LA: , approximateaddress 1 shared values:  ['N']
+NYC: , bridge_highway_name LA: , anonymous 1 shared values:  ['N']
+NYC ids: ['unique_key']
+    unique_key int
+LA ids: ['srnumber']
+    srnumber string
+created_date / createddate | NYC 2026-07-22 09:27:15 to 2026-10-05 02:05:08 | LA 2024-01-01 00:00:06 to 2024-07-24 23:14:35
+
+ created_date / createddate
+NYC: 0 0.0
+LA: 0 0.0
+closed_date / closeddate | NYC 2026-07-08 23:36:00 to 2026-10-05 03:27:00 | LA 2024-01-01 07:39:53 to 2025-10-16 00:02:44
+
+ closed_date / closeddate
+NYC: 84106 10.5
+LA: 36222 4.5
+
+ street_name / streetname
+NYC: 22548 2.8
+LA: 114695 14.3
+
+ status / status
+NYC: 0 0.0
+LA: 0 0.0
+
+ police_precinct / policeprecinct
+NYC: 0 0.0
+LA: 792 0.1
+
+ latitude / latitude
+NYC: 14630 1.8
+LA: 767 0.1
+
+ longitude / longitude
+NYC: 14630 1.8
+LA: 767 0.1
+
+ location / location
+NYC: 14630 1.8
+LA: 767 0.1
+root
+ |-- unique_key: integer (nullable = true)
+ |-- agency: string (nullable = true)
+ |-- agency_name: string (nullable = true)
+ |-- complaint_type: string (nullable = true)
+ |-- descriptor: string (nullable = true)
+ |-- descriptor_2: string (nullable = true)
+ |-- location_type: string (nullable = true)
+ |-- incident_zip: string (nullable = true)
+ |-- incident_address: string (nullable = true)
+ |-- cross_street_1: string (nullable = true)
+ |-- cross_street_2: string (nullable = true)
+ |-- intersection_street_1: string (nullable = true)
+ |-- intersection_street_2: string (nullable = true)
+ |-- address_type: string (nullable = true)
+ |-- city: string (nullable = true)
+ |-- landmark: string (nullable = true)
+ |-- facility_type: string (nullable = true)
+ |-- due_date: timestamp (nullable = true)
+ |-- resolution_description: string (nullable = true)
+ |-- resolution_action_updated_date: timestamp (nullable = true)
+ |-- community_board: string (nullable = true)
+ |-- council_district: integer (nullable = true)
+ |-- bbl: long (nullable = true)
+ |-- borough: string (nullable = true)
+ |-- x_coordinate_state_plane: integer (nullable = true)
+ |-- y_coordinate_state_plane: integer (nullable = true)
+ |-- open_data_channel_type: string (nullable = true)
+ |-- park_facility_name: string (nullable = true)
+ |-- park_borough: string (nullable = true)
+ |-- vehicle_type: string (nullable = true)
+ |-- taxi_company_borough: string (nullable = true)
+ |-- taxi_pick_up_location: string (nullable = true)
+ |-- bridge_highway_name: string (nullable = true)
+ |-- bridge_highway_direction: string (nullable = true)
+ |-- road_ramp: string (nullable = true)
+ |-- bridge_highway_segment: string (nullable = true)
+[Stage 402:>                                                      (0 + 10) / 10]                                                                                [Stage 405:================>                                       (3 + 7) / 10]                                                                                [Stage 408:>                                                      (0 + 10) / 10]26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:24 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:25 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:27 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:30 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:30 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:30 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 408:=====>                                                  (1 + 9) / 10][Stage 408:================>                                       (3 + 7) / 10]26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:31 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:32 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:32 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 410:>                                                      (0 + 10) / 10][Stage 410:============================================>           (8 + 2) / 10]                                                                                [Stage 414:>                                                      (0 + 10) / 10]26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:35 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 414:=====>                                                  (1 + 9) / 10][Stage 414:==================================================>     (9 + 1) / 10]26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+26/11/02 18:37:38 WARN RowBasedKeyValueBatch: Calling spill() on RowBasedKeyValueBatch. Will not spill but return 0.
+[Stage 416:>                                                      (0 + 10) / 10]                                                                                
+root
+ |-- srnumber: string (nullable = true)
+ |-- updateddate: timestamp (nullable = true)
+ |-- actiontaken: string (nullable = true)
+ |-- owner: string (nullable = true)
+ |-- requesttype: string (nullable = true)
+ |-- requestsource: string (nullable = true)
+ |-- createdbyuserorganization: string (nullable = true)
+ |-- mobileos: string (nullable = true)
+ |-- anonymous: string (nullable = true)
+ |-- assignto: string (nullable = true)
+ |-- servicedate: timestamp (nullable = true)
+ |-- addressverified: string (nullable = true)
+ |-- approximateaddress: string (nullable = true)
+ |-- address: string (nullable = true)
+ |-- housenumber: integer (nullable = true)
+ |-- direction: string (nullable = true)
+ |-- suffix: string (nullable = true)
+ |-- zipcode: string (nullable = true)
+ |-- tbmpage: integer (nullable = true)
+ |-- tbmcolumn: string (nullable = true)
+ |-- tbmrow: integer (nullable = true)
+ |-- apc: string (nullable = true)
+ |-- cd: integer (nullable = true)
+ |-- cdmember: string (nullable = true)
+ |-- nc: integer (nullable = true)
+ |-- ncname: string (nullable = true)
+
+-RECORD 0----------------------------------------------------
+ count_if((unique_key IS NULL))                     | 0      
+ count_if((agency IS NULL))                         | 0      
+ count_if((agency_name IS NULL))                    | 0      
+ count_if((complaint_type IS NULL))                 | 0      
+ count_if((descriptor IS NULL))                     | 0      
+ count_if((descriptor_2 IS NULL))                   | 424217 
+ count_if((location_type IS NULL))                  | 63140  
+ count_if((incident_zip IS NULL))                   | 6881   
+ count_if((incident_address IS NULL))               | 22532  
+ count_if((cross_street_1 IS NULL))                 | 192306 
+ count_if((cross_street_2 IS NULL))                 | 192035 
+ count_if((intersection_street_1 IS NULL))          | 191338 
+ count_if((intersection_street_2 IS NULL))          | 190927 
+ count_if((address_type IS NULL))                   | 4444   
+ count_if((city IS NULL))                           | 55385  
+ count_if((landmark IS NULL))                       | 259749 
+ count_if((facility_type IS NULL))                  | 769295 
+ count_if((due_date IS NULL))                       | 796849 
+ count_if((resolution_description IS NULL))         | 37478  
+ count_if((resolution_action_updated_date IS NULL)) | 35055  
+ count_if((community_board IS NULL))                | 0      
+ count_if((council_district IS NULL))               | 18704  
+ count_if((bbl IS NULL))                            | 99123  
+ count_if((borough IS NULL))                        | 0      
+ count_if((x_coordinate_state_plane IS NULL))       | 14607  
+ count_if((y_coordinate_state_plane IS NULL))       | 14495  
+ count_if((open_data_channel_type IS NULL))         | 0      
+ count_if((park_facility_name IS NULL))             | 0      
+ count_if((park_borough IS NULL))                   | 0      
+ count_if((vehicle_type IS NULL))                   | 760420 
+ count_if((taxi_company_borough IS NULL))           | 799369 
+ count_if((taxi_pick_up_location IS NULL))          | 792169 
+ count_if((bridge_highway_name IS NULL))            | 796127 
+ count_if((bridge_highway_direction IS NULL))       | 797807 
+ count_if((road_ramp IS NULL))                      | 797966 
+ count_if((bridge_highway_segment IS NULL))         | 796127 
+
+-RECORD 0-----------------------------------------------
+ count_if((srnumber IS NULL))                  | 0      
+ count_if((updateddate IS NULL))               | 0      
+ count_if((actiontaken IS NULL))               | 0      
+ count_if((owner IS NULL))                     | 0      
+ count_if((requesttype IS NULL))               | 0      
+ count_if((requestsource IS NULL))             | 0      
+ count_if((createdbyuserorganization IS NULL)) | 0      
+ count_if((mobileos IS NULL))                  | 522586 
+ count_if((anonymous IS NULL))                 | 0      
+ count_if((assignto IS NULL))                  | 7469   
+ count_if((servicedate IS NULL))               | 53038  
+ count_if((addressverified IS NULL))           | 0      
+ count_if((approximateaddress IS NULL))        | 324461 
+ count_if((address IS NULL))                   | 233    
+ count_if((housenumber IS NULL))               | 114696 
+ count_if((direction IS NULL))                 | 53219  
+ count_if((suffix IS NULL))                    | 63446  
+ count_if((zipcode IS NULL))                   | 887    
+ count_if((tbmpage IS NULL))                   | 774    
+ count_if((tbmcolumn IS NULL))                 | 774    
+ count_if((tbmrow IS NULL))                    | 774    
+ count_if((apc IS NULL))                       | 822    
+ count_if((cd IS NULL))                        | 770    
+ count_if((cdmember IS NULL))                  | 70014  
+ count_if((nc IS NULL))                        | 11414  
+ count_if((ncname IS NULL))                    | 11414  
+
+-RECORD 0------------------------------------------------
+ count(DISTINCT unique_key)                     | 800000 
+ count(DISTINCT agency)                         | 14     
+ count(DISTINCT agency_name)                    | 14     
+ count(DISTINCT complaint_type)                 | 184    
+ count(DISTINCT descriptor)                     | 909    
+ count(DISTINCT descriptor_2)                   | 748    
+ count(DISTINCT location_type)                  | 152    
+ count(DISTINCT incident_zip)                   | 271    
+ count(DISTINCT incident_address)               | 239734 
+ count(DISTINCT cross_street_1)                 | 10785  
+ count(DISTINCT cross_street_2)                 | 10548  
+ count(DISTINCT intersection_street_1)          | 8217   
+ count(DISTINCT intersection_street_2)          | 8410   
+ count(DISTINCT address_type)                   | 5      
+ count(DISTINCT city)                           | 90     
+ count(DISTINCT landmark)                       | 7744   
+ count(DISTINCT facility_type)                  | 2      
+ count(DISTINCT due_date)                       | 2175   
+ count(DISTINCT resolution_description)         | 614    
+ count(DISTINCT resolution_action_updated_date) | 421959 
+ count(DISTINCT community_board)                | 77     
+ count(DISTINCT council_district)               | 51     
+ count(DISTINCT bbl)                            | 186759 
+ count(DISTINCT borough)                        | 6      
+ count(DISTINCT x_coordinate_state_plane)       | 86865  
+ count(DISTINCT y_coordinate_state_plane)       | 101402 
+ count(DISTINCT open_data_channel_type)         | 5      
+ count(DISTINCT park_facility_name)             | 5      
+ count(DISTINCT park_borough)                   | 6      
+ count(DISTINCT vehicle_type)                   | 8      
+ count(DISTINCT taxi_company_borough)           | 5      
+ count(DISTINCT taxi_pick_up_location)          | 4834   
+ count(DISTINCT bridge_highway_name)            | 73     
+ count(DISTINCT bridge_highway_direction)       | 166    
+ count(DISTINCT road_ramp)                      | 196    
+ count(DISTINCT bridge_highway_segment)         | 634    
+
+-RECORD 0-------------------------------------------
+ count(DISTINCT srnumber)                  | 800000 
+ count(DISTINCT updateddate)               | 786839 
+ count(DISTINCT actiontaken)               | 7      
+ count(DISTINCT owner)                     | 11     
+ count(DISTINCT requesttype)               | 12     
+ count(DISTINCT requestsource)             | 15     
+ count(DISTINCT createdbyuserorganization) | 14     
+ count(DISTINCT mobileos)                  | 2      
+ count(DISTINCT anonymous)                 | 2      
+ count(DISTINCT assignto)                  | 53     
+ count(DISTINCT servicedate)               | 110846 
+ count(DISTINCT addressverified)           | 3      
+ count(DISTINCT approximateaddress)        | 2      
+ count(DISTINCT address)                   | 311083 
+ count(DISTINCT housenumber)               | 21537  
+ count(DISTINCT direction)                 | 4      
+ count(DISTINCT suffix)                    | 39     
+ count(DISTINCT zipcode)                   | 141    
+ count(DISTINCT tbmpage)                   | 56     
+ count(DISTINCT tbmcolumn)                 | 10     
+ count(DISTINCT tbmrow)                    | 7      
+ count(DISTINCT apc)                       | 7      
+ count(DISTINCT cd)                        | 15     
+ count(DISTINCT cdmember)                  | 18     
+ count(DISTINCT nc)                        | 99     
+ count(DISTINCT ncname)                    | 99     
+[Stage 420:>                                                      (0 + 10) / 10][Stage 420:=====>                                                  (1 + 9) / 10]                                                                                [Stage 423:>                                                      (0 + 10) / 10][Stage 423:=====>                                                  (1 + 9) / 10]                                                                                
+-RECORD 0---------------------------------------------------
+ min(unique_key)                     | 69801670             
+ min(agency)                         | DCWP                 
+ min(agency_name)                    | Department of Bui... 
+ min(complaint_type)                 | AHV Inspection Unit  
+ min(descriptor)                     | "Smoking Signs - ... 
+ min(descriptor_2)                   | 1-3 Residential U... 
+ min(location_type)                  | 1-2 Family Dwelling  
+ min(incident_zip)                   | 00083                
+ min(incident_address)               | -999 101 AVENUE      
+ min(cross_street_1)                 | 1 AVE                
+ min(cross_street_2)                 | 1 AVE                
+ min(intersection_street_1)          | 1 AVENUE             
+ min(intersection_street_2)          | 1 AVENUE             
+ min(address_type)                   | ADDRESS              
+ min(city)                           | ARVERNE              
+ min(landmark)                       | 1 AVENUE             
+ min(facility_type)                  | DSNY Garage          
+ min(due_date)                       | 2026-07-28 06:36:18  
+ min(resolution_description)         | "Service Request ... 
+ min(resolution_action_updated_date) | 2022-10-13 07:35:08  
+ min(community_board)                | 0 Unspecified        
+ min(council_district)               | 1                    
+ min(bbl)                            | 0                    
+ min(borough)                        | BRONX                
+ min(x_coordinate_state_plane)       | 913357               
+ min(y_coordinate_state_plane)       | 121140               
+ min(open_data_channel_type)         | MOBILE               
+ min(park_facility_name)             | Astoria Park         
+ min(park_borough)                   | BRONX                
+ min(vehicle_type)                   | Ambulette / Parat... 
+ min(taxi_company_borough)           | BRONX                
+ min(taxi_pick_up_location)          | 1 ASTOR PLACE, MA... 
+ min(bridge_highway_name)            | 1                    
+ min(bridge_highway_direction)       | 1 2 3 Downtown & ... 
+ min(road_ramp)                      | 1 Av & 14 St to 8 Av 
+ min(bridge_highway_segment)         | 108 St (Exit 21)     
+ max(unique_key)                     | 70648545             
+ max(agency)                         | TLC                  
+ max(agency_name)                    | Taxi and Limousin... 
+ max(complaint_type)                 | X-Ray Machine/Equ... 
+ max(descriptor)                     | unknown odor/tast... 
+ max(descriptor_2)                   | Wrong Goods          
+ max(location_type)                  | Yard                 
+ max(incident_zip)                   | No                   
+ max(incident_address)               | teneyck street       
+ max(cross_street_1)                 | ZWICKY AVENUE        
+ max(cross_street_2)                 | ZWICKY AVENUE        
+ max(intersection_street_1)          | ZWICKY AVENUE        
+ max(intersection_street_2)          | ZWICKY AVENUE        
+ max(address_type)                   | PLACENAME            
+ max(city)                           | yonkers              
+ max(landmark)                       | ZULETTE AVENUE       
+ max(facility_type)                  | N/A                  
+ max(due_date)                       | 2026-11-03 18:04:31  
+ max(resolution_description)         | Your complaint wa... 
+ max(resolution_action_updated_date) | 2026-10-05 12:00:00  
+ max(community_board)                | Unspecified STATE... 
+ max(council_district)               | 51                   
+ max(bbl)                            | 5270000523           
+ max(borough)                        | Unspecified          
+ max(x_coordinate_state_plane)       | 1067279              
+ max(y_coordinate_state_plane)       | 271876               
+ max(open_data_channel_type)         | UNKNOWN              
+ max(park_facility_name)             | Unspecified          
+ max(park_borough)                   | Unspecified          
+ max(vehicle_type)                   | Van                  
+ max(taxi_company_borough)           | STATEN ISLAND        
+ max(taxi_pick_up_location)          | YANKEE STADIUM, B... 
+ max(bridge_highway_name)            | Willis Ave Br - 1... 
+ max(bridge_highway_direction)       | Westbound/To Goet... 
+ max(road_ramp)                      | Windsor Pl & Howa... 
+ max(bridge_highway_segment)         | Wythe Ave/Kent Av... 
+
+-RECORD 0----------------------------------------------
+ min(srnumber)                  | 1-4601720641         
+ min(updateddate)               | 2024-01-01 00:05:06  
+ min(actiontaken)               | Consultation/3-way   
+ min(owner)                     | BOE                  
+ min(requesttype)               | Bulky Items          
+ min(requestsource)             | Call                 
+ min(createdbyuserorganization) | BOE                  
+ min(mobileos)                  | Android              
+ min(anonymous)                 | N                    
+ min(assignto)                  | 105, IED             
+ min(servicedate)               | 2022-08-30 10:51:34  
+ min(addressverified)           | M                    
+ min(approximateaddress)        | N                    
+ min(address)                   | 1  WORLD WAY, 90045  
+ min(housenumber)               | 1                    
+ min(direction)                 | E                    
+ min(suffix)                    | AL                   
+ min(zipcode)                   | 0                    
+ min(tbmpage)                   | 480                  
+ min(tbmcolumn)                 | A                    
+ min(tbmrow)                    | 1                    
+ min(apc)                       | Central APC          
+ min(cd)                        | 1                    
+ min(cdmember)                  | Bob Blumenfield      
+ min(nc)                        | 4                    
+ min(ncname)                    | Arleta               
+ max(srnumber)                  | 1-4844266941         
+ max(updateddate)               | 2026-01-31 05:53:27  
+ max(actiontaken)               | Unable to Assist     
+ max(owner)                     | RAP                  
+ max(requesttype)               | Single Streetligh... 
+ max(requestsource)             | Web Form             
+ max(createdbyuserorganization) | Self Service_SAN     
+ max(mobileos)                  | iOS                  
+ max(anonymous)                 | Y                    
+ max(assignto)                  | WVALLEY              
+ max(servicedate)               | 2025-09-03 15:53:36  
+ max(addressverified)           | Y                    
+ max(approximateaddress)        | Y                    
+ max(address)                   | ZONAL AVE AT MISS... 
+ max(housenumber)               | 29199                
+ max(direction)                 | W                    
+ max(suffix)                    | WY                   
+ max(zipcode)                   | VE, 0                
+ max(tbmpage)                   | 4724                 
+ max(tbmcolumn)                 | J                    
+ max(tbmrow)                    | 7                    
+ max(apc)                       | West Los Angeles APC 
+ max(cd)                        | 15                   
+ max(cdmember)                  | Vacant               
+ max(nc)                        | 128                  
+ max(ncname)                    | Zapata-King          
+
