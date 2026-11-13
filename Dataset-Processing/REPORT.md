@@ -157,6 +157,20 @@ Each cleaned dataset keeps **all original columns** (cleaned and typed) plus the
 and derived columns. All outputs are saved as Parquet, which keeps column types and loads quickly
 for Phase 2. `export_csv.py` produces CSV copies for submission or viewing.
 
+A few original columns are renamed so they don't clash with the shared columns:
+
+| Dataset | Original | Saved as | Why |
+|---|---|---|---|
+| NYC | `created_date`, `closed_date` | `created_at`, `closed_at` | `created_date` is now the derived calendar date (same name in both cities) |
+| NYC | `city` (e.g. BROOKLYN, FLUSHING) | `incident_city` | `city` now means the source city (New York / Los Angeles) |
+| LA | `createddate`, `closeddate` | `created_at`, `closed_at` | Same names as NYC; avoids storing the timestamp twice |
+| Both | `status` | `status` (standardized) + `status_raw` (original) | See §5 |
+
+An earlier version copied these columns instead of renaming them. That accidentally replaced
+NYC's original `created_date` timestamp with a plain date and NYC's original `city` with
+"New York" in the cleaned NYC file. This is fixed, and the row counts and unified dataset were
+not affected.
+
 | Dataset | Path | Rows |
 |---|---|---|
 | Cleaned NYC | `output/nyc_clean/` (CSV: `output/csv/nyc_clean.csv`) | 799,739 |

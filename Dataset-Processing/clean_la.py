@@ -94,12 +94,14 @@ def main():
             .withColumn("closeddate",
                         F.when(~F.col("closed_before_created"), F.col("closeddate"))))
 
-    # 7) Standardized / derived columns.
-    df = (df.withColumn("source", F.lit("LA311"))
+    # 7) Standardized / derived columns. createddate / closeddate are renamed (not
+    #    copied) to created_at / closed_at so the same timestamp isn't stored twice,
+    #    matching the NYC file.
+    df = (df.withColumnRenamed("createddate", "created_at")
+            .withColumnRenamed("closeddate", "closed_at")
+            .withColumn("source", F.lit("LA311"))
             .withColumn("city", F.lit("Los Angeles"))
             .withColumn("request_id", F.concat(F.lit("LA-"), F.col("srnumber")))
-            .withColumn("created_at", F.col("createddate"))
-            .withColumn("closed_at", F.col("closeddate"))
             .withColumn("status", mapper("status_raw", STATUS_MAP, "UNKNOWN"))
             .withColumn("channel", mapper("channel_raw", CHANNEL_MAP, "UNKNOWN")))
     df = add_derived(df).cache()

@@ -21,11 +21,17 @@ CS236-Project/
 ├── README.md               ← this file
 ├── datasets/               ← put the raw CSVs here (not in git; see Data below)
 ├── EDA/                    ← Phase 1.2: exploratory data analysis
-└── Dataset-Processing/     ← Phase 1.3: cleaning, schema mapping, merge, validation
+├── Dataset-Processing/     ← Phase 1.3: cleaning, schema mapping, merge, validation
+│   ├── README.md           ← how to run
+│   ├── REPORT.md           ← Phase 1 report (dataset processing)
+│   ├── common.py, clean_nyc.py, clean_la.py, merge.py, validate.py, export_csv.py
+│   └── output/             ← generated data (git-ignored)
+└── Database-Population/    ← Phase 2.2: PostgreSQL design + loading with Spark
     ├── README.md           ← how to run
-    ├── REPORT.md           ← Phase 1 report (dataset processing)
-    ├── common.py, clean_nyc.py, clean_la.py, merge.py, validate.py, export_csv.py
-    └── output/             ← generated data (git-ignored)
+    ├── REPORT.md           ← Phase 2 report (database population)
+    ├── sql/                ← create_tables.sql, create_indexes.sql
+    ├── load_to_postgres.py, verify_db.py, db_common.py
+    └── start_postgres.sh, run_all.sh
 ```
 
 ## Data
@@ -55,7 +61,8 @@ If the files are missing, the scripts stop with a message pointing here.
 
 - Python 3.9+ with `pyspark==3.5.1`
 - Java 17 (needed by Spark)
-- Docker (needed from Phase 2 onward for PostgreSQL)
+- Docker (needed from Phase 2 onward for PostgreSQL). On Linux, if Docker says `permission denied`,
+  run `sudo usermod -aG docker $USER` and log out and back in.
 
 `Dataset-Processing/setup_env.sh` sets up Python and Java without sudo. Check Docker with
 `docker --version`.
@@ -107,9 +114,40 @@ Details: [`Dataset-Processing/README.md`](Dataset-Processing/README.md) (how to 
 ---
 
 ## Phase 2: Spark Analysis & Database Population
+
+### 2.1 Spark Analysis
 > **Placeholder.** Not started.
 > - Weekly request volume, service-request hotspots (+ optional resolution performance, status/channel)
-> - PostgreSQL schema (SQL files) and population via Spark
+
+### 2.2 Database Population
+Loads the cleaned NYC, cleaned LA, and unified datasets into PostgreSQL 16 (Docker) with
+PySpark over JDBC. The tables have typed columns, primary keys, NOT NULL and CHECK constraints.
+48 verification checks pass (row counts, types, keys, values).
+
+```bash
+# needs Docker and the Phase 1 outputs (Dataset-Processing/run_all.sh)
+cd Database-Population
+./start_postgres.sh && ./run_all.sh
+```
+
+| Table | Rows | Primary key |
+|---|---|---|
+| `nyc_clean` | 799,739 | `unique_key` |
+| `la_clean` | 800,000 | `srnumber` |
+| `unified` | 1,599,739 | `request_id` |
+
+Details: [`Database-Population/README.md`](Database-Population/README.md) (how to run) and
+[`Database-Population/REPORT.md`](Database-Population/REPORT.md) (design and results).
+
+### Phase 2 deliverables
+
+| Deliverable | Location |
+|---|---|
+| Report: Spark analyses and findings | _TODO (2.1)_ |
+| Report: PostgreSQL database design, population process | `Database-Population/REPORT.md` |
+| Well-documented source code | `Database-Population/` (+ _TODO 2.1_) |
+| SQL files to create the tables | `Database-Population/sql/create_tables.sql`, `sql/create_indexes.sql` |
+| 5-minute video | _TODO_ |
 
 ## Phase 3: WebUI
 > **Placeholder.** Not started.

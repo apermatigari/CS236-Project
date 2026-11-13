@@ -84,11 +84,17 @@ def main():
                         F.when(~F.col("closed_before_created"), F.col("closed_date"))))
 
     # 7) Standardized / derived columns used by the unified schema.
-    df = (df.withColumn("source", F.lit("NYC311"))
+    #    Renames avoid name clashes with the shared columns:
+    #    - NYC's own "city" (e.g. BROOKLYN, FLUSHING) is kept as incident_city, because
+    #      "city" now means the source city (New York) in both datasets.
+    #    - created_date / closed_date become created_at / closed_at (same timestamps),
+    #      because add_derived() adds created_date as a plain calendar date.
+    df = (df.withColumnRenamed("city", "incident_city")
+            .withColumnRenamed("created_date", "created_at")
+            .withColumnRenamed("closed_date", "closed_at")
+            .withColumn("source", F.lit("NYC311"))
             .withColumn("city", F.lit("New York"))
             .withColumn("request_id", F.concat(F.lit("NYC-"), F.col("unique_key")))
-            .withColumn("created_at", F.col("created_date"))
-            .withColumn("closed_at", F.col("closed_date"))
             .withColumn("status", mapper("status_raw", STATUS_MAP, "UNKNOWN"))
             .withColumn("channel", mapper("channel_raw", CHANNEL_MAP, "UNKNOWN"))
             .withColumn("borough", F.upper("borough")))

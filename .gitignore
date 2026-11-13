@@ -1,7 +1,28 @@
+# Python
 __pycache__/
-output/
+*.py[cod]
+.ipynb_checkpoints/
+
+# environments (created by Dataset-Processing/setup_env.sh)
 .venv/
 .jdk/
+
+# generated outputs (Parquet, CSV exports, run logs) - recreate with run_all.sh
+output/
+
+# Spark / Hive local artifacts
+spark-warehouse/
+metastore_db/
+derby.log
+
+# local secrets / settings (e.g. PG_PASSWORD overrides)
+.env
+
+# OS / editor files
+.DS_Store
+.idea/
+.vscode/
+
 # raw data is downloaded separately (see datasets/README.md)
 datasets/*
 !datasets/README.md
